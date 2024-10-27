@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tab.current-tab{
+    background-color: rgba(219,226,239,0.5);
+    border-radius: 4px;
+}
+
+.form-container.active{
+    transform: scale(1);
+    opacity: 1;
+    display: flex;
+}
+
+
+
+.wrapper{
+    width: 100vw;
+    height: 200vh;
+    background: linear-gradient(160deg, #112d4e 0%, #3f72af 100%);
+    color: white;
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+.tab-container{
+    width: 90%;
+    max-width: 550px;
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+    margin-top: 4rem;
+    
+}
+.tab{
+    font-size:0.875rem;
+    letter-spacing: 1.75px;
+    padding: 5px 8px;
+    cursor: pointer;
+}
+
+.weather-container{
+   margin-block: 4rem;
+}
+
+.btn{
+    all: unset;
+    /* color: white; */
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    border-radius: 5px;
+    background-color: rgb(60, 60, 149);
+    padding: 10px 30px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.sub-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grand-location{
+    display: none;
+    /* flex-direction: column;
+    justify-content: center; */
+}
+.grand-location.active{
+    display: flex;
+}
+.grand-location img{
+    margin-bottom: 2rem;
+}
+.grand-location p:first-of-type{
+    font-weight: 600;
+    font-size: 1.75rem;
+    /* margin-bottom: 1rem; */
+}
+.grand-location p:last-of-type{
+    font-weight: 500;
+    font-size: 0.85rem;
+    margin-bottom: 1.75rem;
+    letter-spacing: 0.75px;
+    margin-top: 0.75rem;
+}
+
+.loading-container{
+    display: none;
+}
+.loading-container.active{
+    display: flex;
+}
+.loading-container p{
+    text-transform: uppercase;
+}
+
+.user-info-container{
+    display: none;
+}
+.user-info-container.active{
+    display: flex;
+}
+
+.user-info-container p{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+.user-info-container img{
+    width: 90px;
+    height: 90px;
+}
+.user-info-container p[data-temp]{
+    font-size: 2.75rem;
+    font-weight: 700;
+}
+
+.parameter-container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+@media screen and (min-width: 480px) {
+    .parameter-container {
+      flex-direction: row;
+    }
+  }
+.parameter{
+    width: 30%;
+    max-width: 200px;
+    background-color: rgba(219, 226, 239, 0.5);
+    padding: 1rem;
+    border-radius: 5px;
+    gap: 5px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.parameter img{
+    width: 50px;
+    height: 50px;
+}
+.parameter p:first-of-type{
+    font-size: 1.15rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.parameter p:last-of-type{
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.name{
+    display: flex;
+    align-items: center;
+    gap: 0 0 .5rem;
+    margin-bottom: 1rem;
+}
+.name img{
+    width: 30px;
+    height: 30px;
+}
+.name p{
+    font-size: 2rem;
+    
+}
+
+.form-container{
+    display: none;
+    width: 90%;
+    max-width: 550px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
+    margin-bottom: 3rem;
+}
+
+.form-container.active{
+    display: flex;
+}
+
+.form-container input{
+    all: unset;
+    width: calc(100% - 80px);
+    height: 40px;
+    padding: 0 20px;
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 10px;
+}
+.form-container input::placeholder{
+    color: rgb(255, 255, 255, 0.7);
+}
+
+.form-container input:focus{
+    outline: 3px solid rgb(255, 255, 255, 0.7);
+}
+
+.form-container .btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    padding: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1px;
+}
